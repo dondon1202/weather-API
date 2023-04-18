@@ -6,18 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body>
+  <body style="padding: 30px; background-color: black; color: white">
+    <div class="flex" style="margin-bottom: 30px">
+      <button class="sun" value="今日紫外線">今日紫外線</button>
+      <button class="weather" value="今日天氣">今日天氣</button>
+    </div>
     <table style="width: 400px">
       <thead>
         <tr>
           <th>縣市</th>
-          <th class="title">最高紫外線濃度</th>
+          <th class="title"></th>
         </tr>
       </thead>
       <tbody class="list">
         <tr>
-          <td>The table body</td>
-          <td>with two columns</td>
+          <td>請點選要顯示的資料</td>
         </tr>
       </tbody>
     </table>
@@ -30,6 +33,9 @@
         border: 1px solid blue;
         padding: 10px;
         text-align: center;
+      }
+      button {
+        padding: 10px;
       }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.5/axios.min.js"></script>
