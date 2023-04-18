@@ -14,7 +14,8 @@ function getSun() {
       // console.log(response.data.result.fields);
       // console.log(response.data.records.weatherElement.location);
       // console.log(response.data.records.weatherElement.elementName);
-
+      let city = document.querySelector(".city");
+      city.textContent = "觀測站";
       let location = response.data.records.weatherElement.location;
       let value = response.data.records.weatherElement.location.value;
       const title = document.querySelector(".title");
@@ -77,6 +78,8 @@ function getWeather() {
     .then(function (response) {
       // 成功會回傳的內容
       // console.log(response.data.records.location);
+      let city = document.querySelector(".city");
+      city.textContent = "縣市";
       let data = response.data.records.location;
       // let value = response.data.records.location.value;
       const title = document.querySelector(".title");
